@@ -1,14 +1,14 @@
 {
-  "builds": [
+  "projects": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build"
+      "src": "LuxeMark_Watches/luxemark-watches/package.json",
+      "use": "@vercel/static-build",
+      "buildCommand": "npm run build",
+      "outputDirectory": "build",
+      "framework": "create-react-app",
+      "routes": [
+        { "src": "/(.*)", "dest": "/index.html" }
+      ]
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "framework": "create-react-app",
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
