@@ -1,5 +1,16 @@
 {
-    "rewrites":[
-        {"source":"/(.*)","destination":"/"}
-        ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "luxemark-watches/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "luxemark-watches/build"
+      }
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "luxemark-watches/build/index.html" }
+  ]
+}
