@@ -1,0 +1,51 @@
+{
+  "name": "luxemark-watches",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cra-template-pwa": "2.0.0",
+    "lucide-react": "^0.536.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.7.1",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.19",
+    "web-vitals": "^5.1.0"
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "overrides": {
+    "rimraf": "^4.4.1",
+    "rollup-plugin-terser": "@rollup/plugin-terser@^0.4.4",
+    "sourcemap-codec": "@jridgewell/sourcemap-codec@^1.4.15",
+    "workbox-cacheable-response": "^6.6.1",
+    "workbox-background-sync": "^6.6.1"
+  }
+}
+
